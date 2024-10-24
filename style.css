@@ -236,9 +236,22 @@
 
 
 
+/* #Product  */
 
+.product{
+    width: 100%;
+    min-height: 50vh;
+    padding: 70px 0px;
+    background: url(assets/imgs/bg-product.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+}
 
-
+/* .product .text{
+    
+} */
 
 
 
