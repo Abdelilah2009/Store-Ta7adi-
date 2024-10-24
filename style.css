@@ -7,17 +7,16 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    outline: none;
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 :root {
     --bg-color: #000000;
-    --main-color: #00f7ff;
-    --principal-color: #001aff;
+    /* --main-color: #00f7ff; */
+    --principal-color: #002A48;
 }
 
 .container {
@@ -85,8 +84,7 @@ html {
 }
 
 .header .navbar .link:hover {
-    background-color: #03a2e011;
-    color: var(--principal-color);
+    color: #0c80d3;
 }
 
 .header .button-nav{
