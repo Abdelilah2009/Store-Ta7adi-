@@ -109,7 +109,7 @@ html {
     width: 100%;
     min-height: 80vh;
     padding: 70px 0px;
-    background: url(assets/imgs/bg-hero.png) no-repeat rgb(70, 67, 67);
+    background: url(assets/imgs/bg-hero.png) no-repeat #FCEED5;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -150,42 +150,91 @@ html {
     align-items: center;
 }
 
-
 .home .btns-hero .btn-h-2{
     color: white;
     background-color: #002A48;
 }
 
-.category .title-btn{
+.title-btn{
     display: flex;
     justify-content: space-around;
-    padding-top: 70px;
+    padding: 30px 0px;
 }
 
-
-.category .title-btn h3{
+.title-btn h3{
     font-weight: 450;
 }
 
 
-.category .title-btn h2{
+.title-btn h2{
     color: #F7DBA7;
     padding-top: 5px;
 }
 
-.category .title-btn .c-btn a{
+.title-btn .c-btn a{
     color: #002A48;
     border: #002A48 solid 2px;
     border-radius: 30px;
     padding: 10px 25px;
+    display: flex;
+    margin-top: 20px;
 }
 
-.category .title-btn .c-btn i{
-    font-size: 20px;
+.title-btn .c-btn i{
+    font-size: 25px;
+    margin: 0.1em 0em;
 }
 
 
+/* #Category  */
 
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1350px;
+    margin: 25px auto;
+}
+
+.card-list .card-item {
+    background: #fff;
+    padding: 0px 10px 70px 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-list .card-item img {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card-item h3 {
+    color: #000;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.card-item .p{
+    display: flex;
+    font-size: 0.8rem;
+    color: gray;
+    gap: 12px;
+    padding: 7px 0px;
+}
+
+.card-item .p span{
+    font-weight: 600;
+}
+
+.card-item h2{
+    font-size: 1rem;
+    color: #000;
+}
 
 
 
