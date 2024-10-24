@@ -127,28 +127,28 @@
     padding-bottom: 20px;
 }
 
-.home .btns-hero{
+.btns-hero{
     padding-top: 50px;
 }
 
-.home .btns-hero .b-h{
+.btns-hero .b-h{
     border: #002A48 solid 2px;
     border-radius: 30px;
     padding: 10px 25px;
 }
 
-.home .btns-hero .btn-h-1{
+.btns-hero .btn-h-1{
     color: #002A48;
     display: inline;
 }
 
 
-.home .btns-hero .btn-h-1 i{
+.btns-hero .btn-h-1 i{
     font-size: 20px;
     align-items: center;
 }
 
-.home .btns-hero .btn-h-2{
+.btns-hero .btn-h-2{
     color: white;
     background-color: #002A48;
 }
@@ -247,19 +247,32 @@
     background-position: center;
     display: flex;
     justify-content: space-between;
+    text-align: end;
 }
 
-/* .product .text{
-    
-} */
+.product .text{
+    padding-right: 10%;
+    color: var(--principal-color);   
+}
 
+.product .text h1{
+    font-size: 3rem;
+    padding-bottom: 5px;
+}
 
+.product .text h2{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
 
+.product .text p{
+    color: #242B33;
+    padding-bottom: 20px;
+}
 
-
-
-
-
+.p-t h2{
+    color: var(--principal-color);
+}
 
 
 
