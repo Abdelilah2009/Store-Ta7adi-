@@ -13,6 +13,28 @@ html {
     scroll-behavior: smooth;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+    user-select: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.btn-active:active {
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+
+.b-h:active{
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+
 :root {
     --bg-color: #000000;
     --main-color: #FCEED5;
@@ -37,7 +59,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    user-select: none;
 }
 .header.active{
    background-color: #001016;
@@ -131,35 +153,35 @@ html {
     padding-top: 50px;
 }
 
-.btns-hero .b-h{
+.b-h{
     border: var(--principal-color) solid 2px;
     border-radius: 30px;
     padding: 10px 25px;
 }
 
-.btns-hero .btn-h-1{
+.btn-h-1{
     color: var(--principal-color);
     display: inline;
     margin-right: 10px;
 }
 
-.btns-hero .btn-h-1:hover{
+.btn-h-1:hover{
     background-color: var(--principal-color);
     color: white;
     transition: all 0.3s ease;
 }
 
-.btns-hero .b-h:active{
+.b-h:active{
     transform: scale(0.9);
 }
 
 
-.btns-hero .btn-h-1 i{
+.btn-h-1 i{
     font-size: 20px;
     align-items: center;
 }
 
-.btns-hero .btn-h-2{
+.btn-h-2{
     color: white;
     background-color: var(--principal-color);
 }
@@ -224,7 +246,7 @@ html {
 .card-list .card-item img {
     width: 100%;
     height: 250px;
-    border-radius: 8px;
+    border-radius: 3px;
     object-fit: cover;
 }
 
@@ -256,7 +278,7 @@ html {
 
 /* #Product  */
 
-.product{
+.product-banner{
     width: 100%;
     min-height: 50vh;
     padding: 70px 0px;
@@ -268,22 +290,185 @@ html {
     text-align: end;
 }
 
-.product .text{
-    padding-right: 10%;
+.product-banner .text{
+    padding-right: 5%;
     color: var(--principal-color);   
+
 }
 
-.product .text h1{
+.product-banner .text h1{
     font-size: 3rem;
     padding-bottom: 5px;
 }
 
-.product .text h2{
+.product-banner .text h2{
     font-size: 2rem;
     padding-bottom: 20px;
 }
 
-.product .text p{
+.product-banner .text p{
+    color: #242B33;
+    padding-bottom: 20px;
+}
+
+.p-t h2{
+    color: var(--principal-color);
+}
+
+.btns-product{
+    padding-top: 40px;
+}
+
+
+
+
+
+
+.card-list-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1350px;
+    margin: 25px auto;
+}
+
+.card-list-2 .card-item-2 {
+    background: #fff;
+    padding: 0px 10px 70px 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-list-2 .card-item-2 img {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card-item-2 h3 {
+    color: #000;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.card-item-2 .p{
+    display: flex;
+    font-size: 0.8rem;
+    color: gray;
+    gap: 12px;
+    padding: 7px 0px;
+}
+
+.card-item-2 .p span{
+    font-weight: 600;
+}
+
+.card-item-2 h2{
+    font-size: 0.8rem;
+    color: #000;
+}
+
+.card-item-2 .h4{
+    display: flex;
+    color: var(--principal-color);
+    margin-top: 5px;
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+    gap: 7px;
+}
+
+.d-f span{
+    color: #000;
+    font-size: 1rem;
+    padding-right: 5px;
+}
+
+.d-f h2{
+    font-size: 1.4rem;
+}
+
+
+
+/* Brands  */
+
+.brands{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 25px;
+}
+
+.brands .br-1 img{
+    height: 130px;
+}
+
+.brands .br-2 img{
+    height: 150px;
+}
+
+.brands .br-3 img{
+    height: 65px;
+}
+
+.brands .br-4 img{
+    height: 85px;
+}
+
+.brands .br-5 img{
+    height: 110px;
+    width: 120px;
+}
+
+.brands .br-6 img{
+    height: 75px;
+}
+
+.brands .br-7 img{
+    height: 75px;
+}
+
+
+/* #Product  */
+
+.product-banner-2{
+    width: 100%;
+    min-height: 50vh;
+    padding: 70px 0px;
+    background: url(assets/imgs/bg-product-2.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    margin-top: 50px;
+}
+
+.product-banner-2 .text{
+    padding-right: 10%;
+    color: var(--principal-color);   
+}
+
+.product-banner-2 .text h1{
+    font-size: 3rem;
+    padding-bottom: 5px;
+}
+
+.product-banner-2 .text h2{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+.product-banner-2 .text img{
+    height: 38px;
+}
+
+.product-banner-2 .text p{
     color: #242B33;
     padding-bottom: 20px;
 }
@@ -293,8 +478,200 @@ html {
 }
 
 
+/* Blog  */
 
 
+.card-list-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    max-width: 1350px;
+    margin: 25px auto;
+}
+
+.card-list-3 .card-item-3 {
+    background: #fff;
+    padding: 0px 10px 70px 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-list-3 .card-item-3 img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+.card-item-3 h3 {
+    color: #000;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.card-item-3 span{
+    background-color: #00A7E7;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.6rem;
+}
+
+.card-item-3 h4{
+    font-size: 1rem;
+    color: #000;
+    padding-top: 20px;
+    font-weight: 300;
+}
+
+
+/* Footer  */
+
+footer{
+    background-color: var(--main-color);
+    height: 55.8vh;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.pd{
+    padding: 30px 0px 0px;
+}
+
+.part-s-1{
+    background-color: #003459;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 30px 0px;
+    margin: 50px 5% 0px;
+}
+
+.part-s-1 h1{
+    color: white;
+    text-transform: capitalize;
+    line-height: 200%;
+}
+
+.part-s-1 .form-f{
+    background-color: white;
+    padding: 17px 10px 0px;
+    border-radius: 10px;
+}
+
+.part-s-1 .form-f input{
+    border: gray solid 1px;
+    border-radius: 10px;
+    /* padding: 20px 270px 20px 20px; */
+    padding: 20px 500px 20px 20px;
+}
+
+.part-s-1 .form-f button{
+    background-color: #003459;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0px 10px;
+    color: white;
+    border: transparent;
+    transition: all 0.5s ease;
+    box-shadow: 10px 10px 30px 0px #04416dc0;
+}
+
+.part-s-1 .form-f button:hover{
+    background-color: #04416d;
+}
+
+.part-s-1 .form-f button:active{
+    transform: rotate(0.9);
+}
+
+.f-nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px;
+    color: var(--principal-color);
+}
+
+.f-nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+.f-nav ul li a{
+    padding-left: 20px;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+
+.f-nav ul li a:hover{
+    color: #04416d;
+    transition: all 0.3s ease;
+}
+
+.f-nav .social a{
+    font-size: 2rem;
+    /* padding-left: 10px; */
+    user-select: none;
+}
+
+
+.f-nav .social a:hover{
+    transform: rotate(0.9);
+    color: #04416d;
+    transition: all 0.3s ease;
+}
+
+.f-nav .social a .face:hover{
+    color: #0866FF;
+    transition: 0.5s ease;
+}
+
+.f-nav .social a .x:hover{
+    color: #1DA1F3;
+    transition: 0.5s ease;
+}
+
+.f-nav .social a .insta:hover{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color: white;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+
+.f-nav .social a .yout:hover{
+    color: red;
+    transition: 0.5s ease;
+}
+
+footer hr .hr{
+    width: 50%;
+    display: flex;
+    /* justify-content: baseline; */
+}
+
+footer .copyr{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px 30px;
+}
+
+footer .copyr img{
+    height: 50px;
+}
+
+footer .copyr ul{
+    display: flex;
+    gap: 20px;
+}
+
+footer .copyr p{
+    font-weight: 300;
+}
 
 
 
@@ -434,6 +811,105 @@ html {
     }
 }
 
+@media (max-width:900px){
+.home .text{
+    padding: 16vh 0vh 0px 5vh;
+    color: var(--principal-color);
+}
+
+
+/* #Product  */
+
+.product-banner{
+    width: 100%;
+    min-height: 40vh;
+    padding: 70px 0px;
+    background: url(assets/imgs/bg-product.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: end;
+}
+
+.product-banner .text{
+    padding-right: 2%;
+    color: var(--principal-color);   
+}
+
+.product-banner .text h1{
+    font-size: 1.8rem;
+    padding-bottom: 5px;
+}
+
+.product-banner .text h2{
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+
+.product-banner .text p{
+    color: #242B33;
+    padding-bottom: 0px;
+    padding-left: 52%;
+}
+
+.product-banner .text p br{
+    display: none;
+}
+
+.p-t h2{
+    color: var(--principal-color);
+}
+
+.btns-product{
+    padding-top: 25px;
+}
+
+.b-h{
+    border: var(--principal-color) solid 2px;
+    border-radius: 30px;
+    padding: 8px 20px;
+}
+
+.btn-h-1{
+    color: var(--principal-color);
+    display: inline;
+    margin-right: 10px;
+}
+
+.btn-h-1:hover{
+    background-color: var(--principal-color);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+
+.btn-h-1 i{
+    font-size: 20px;
+    align-items: center;
+}
+
+.btn-h-2{
+    color: white;
+    background-color: var(--principal-color);
+}
+
+}
+
+
+
+
+
+
+
+@media (min-width:1280px){
+    .part-s-1 .form-f input{
+        border: gray solid 1px;
+        border-radius: 15px;
+        padding: 20px 270px 20px 20px;
+    }
+}
+
 @media (min-width:1550px){
     .home .text{
         padding: 18.5vh 0vh 0px 20.7vh;
@@ -441,3 +917,13 @@ html {
     }
     
 } 
+
+   
+
+
+
+
+
+
+
+
