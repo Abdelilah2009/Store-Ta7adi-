@@ -765,9 +765,57 @@ footer .copyr p{
         color: white;
         transition: .3s ease;
     }
+
+
+    .category-w{
+        padding-left: 28%;
+    }
+
+    .title-btn-category .c-title-category{
+        display: flex;
+        gap: 20px;
+        padding: 0px 10px 40px 20px;
+    }
     
+    .title-btn-category{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .title-btn-category h3{
+        font-weight: 600;
+        color: var(--principal-color);
+        font-size: 2rem;
+    }
+    
+    
+    .title-btn-category h5{
+        color: #9FA7AB;
+        padding-top: 20px;
+        font-weight: 300;
 
+    }
 
+    .title-btn-category .c-btn-category a{
+        color: #9FA7AB;
+        border: var(--principal-color) solid 2px;
+        border-radius: 30px;
+        padding: 10px 25px;
+        display: flex;
+        font-weight: 300;
+    }
+    
+    
+    .title-btn-category .c-btn a:hover{
+        background-color: var(--principal-color);
+        color: white;
+        transition: all 0.3s ease;
+    }
+    
+    .title-btn-category .c-btn-category i{
+        font-size: 25px;
+        margin: 0.08em 0em;
+    }
 
 
 
